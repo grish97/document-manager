@@ -1,6 +1,12 @@
+
+interface TUser {
+  name: string;
+  age: number;
+}
+
 interface IUseAuth {
-  getUser: () => any;
-  updateUser: (user: any) => void;
+  getUser: () => TUser;
+  updateUser: (user: Partial<TUser>) => void;
   refreshToken: () => void;
   logout: () => void;
 }

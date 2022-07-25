@@ -30,7 +30,7 @@ export const Navigation: FC = () => {
 
             <Route path="create" element={<DocumentCreate/>}/>
             <Route path="edit/:documentId" element={<DocumentEdit />}/>
-            <Route path=":documentId" element={<DocumentDetailedView />}/>
+            <Route path="view/:documentId" element={<DocumentDetailedView />}/>
           </Route>
 
         </Route>
